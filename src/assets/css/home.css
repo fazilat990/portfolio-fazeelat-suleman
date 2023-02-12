@@ -3,7 +3,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background: #232323;
+    /* background: #232323; */
     overflow: hidden;
   }
   
@@ -40,7 +40,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background: #fff;
+    /* background: #fff; */
     mix-blend-mode: screen;
   }
   
