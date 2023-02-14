@@ -1,17 +1,37 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
 import React from 'react';
+import Footer from './components/Footer';
+import Home from './components/Home'
+import Work from './components/Work';
+import Header from './components/Header';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from './components/Contact';
 
 function App() {
-  const bgDarkThemeColor= '#232323';
 
   return (
-    <div className={`App bg-[${bgDarkThemeColor}]`}>
+    <div className='App'>
+      <Router>
       <Header />
-      <Home />
-      <Footer />
+        <Routes>
+          <Route exact path="/"
+              element={
+                <Home title="Homepage content." />
+              }>
+          </Route>
+          <Route exact path="/work"
+              element={
+                <Work />
+              }>
+          </Route>
+          <Route exact path="/work"
+              element={
+                <Contact />
+              }>
+          </Route>
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
