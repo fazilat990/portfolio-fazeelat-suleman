@@ -4,14 +4,11 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+.work-wrap {
   scroll-behavior: smooth;
-  background: var(--bg);
   cursor: none;
-  /* font-family: "Lexend Mega", sans-serif; */
   pointer-events: none;
   transition-delay: 2s;
-  /* max-width: 100vw; */
   box-sizing: border-box;
 }
 .work-wrap #social {
@@ -47,7 +44,7 @@ body {
   fill: var(--darkgold);
   transition: 0.2s ease-in-out;
 }
-.work-wrap #loader {
+/*.work-wrap #loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +59,7 @@ body {
   transition: transform 0.6s cubic-bezier(1, 0.885, 0.32, 1);
   transition-delay: 1.25s;
   transform-origin: bottom;
-  background: var(--gold);
+  background: var(--green);
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -158,7 +155,7 @@ body {
   transform: rotate(360deg);
   -webkit-animation-delay: -0.625s;
           animation-delay: -0.625s;
-}
+}*/
 body.loaded {
   pointer-events: all;
 }
@@ -169,7 +166,7 @@ body.loaded #social a:nth-of-type(1n) svg {
 body.loaded #social a:last-of-type svg {
   transition-delay: 0s, 2.6s;
 }
-body.loaded #loader {
+/*body.loaded #loader {
   transform: scaleY(0);
   color: transparent;
 }
@@ -181,7 +178,7 @@ body.loaded #loader .wrap {
 body.loaded #loader .wrap span {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
-}
+}*/
 body.loaded #wrap {
   transform: translateX(0%);
   background: var(--bg);
@@ -213,11 +210,11 @@ body.loaded::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar {
-  background: var(--gold);
+  background: var(--green);
   width: 5px;
 }
 body::-webkit-scrollbar-thumb {
-  background: var(--gold);
+  background: var(--green);
 }
 body.active {
   cursor: auto;
@@ -256,7 +253,7 @@ body.active #frame #close strong span.char:before {
   transform: translateY(0);
 }
 body.active #frame #close:hover {
-  box-shadow: 0 0 0 2px var(--gold), inset 0 0 0 20px var(--gold), 0 0 0 20px var(--bg), 0 0 0 22px var(--gold);
+  box-shadow: 0 0 0 2px var(--green), inset 0 0 0 20px var(--green), 0 0 0 20px var(--bg), 0 0 0 22px var(--green);
 }
 body.active #frame #close:hover strong span.char:before {
   color: var(--highlight);
@@ -294,7 +291,7 @@ body.active #frame .frame-container iframe {
   top: 0;
 }
 .work-wrap #close strong.circle span.word span.char:before {
-  color: var(--gold);
+  color: var(--green);
 }
 .work-wrap #close strong.circle span.word span.char:nth-of-type(1) {
   transform: rotate(0deg);
@@ -442,7 +439,7 @@ body.active #frame .frame-container iframe {
   height: 100%;
   top: 0;
   left: -12.5%;
-  background: var(--gold);
+  background: var(--green);
   transition: transform 1s cubic-bezier(1, 0.885, 0.32, 1);
   transition-delay: 0.25s;
   z-index: 999;
@@ -460,7 +457,7 @@ body.active #frame .frame-container iframe {
   top: 45px;
   width: 30px;
   height: 30px;
-  box-shadow: 0 0 0 2px var(--highlight), inset 0 0 0 var(--gold), 0 0 0 20px var(--bg), 0 0 0 22px var(--gold);
+  box-shadow: 0 0 0 2px var(--highlight), inset 0 0 0 var(--green), 0 0 0 20px var(--bg), 0 0 0 22px var(--green);
   background: var(--bg);
   border-radius: 100%;
   position: absolute;
@@ -531,7 +528,7 @@ body.active #frame .frame-container iframe {
   position: absolute;
   bottom: -10px;
   text-decoration: none;
-  color: var(--gold);
+  color: var(--green);
   font-weight: 900;
   transition: color 0.2s ease-in-out, transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-delay: 0.2s;
@@ -575,7 +572,7 @@ body.active #frame .frame-container iframe {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(to bottom, var(--gold) 50%, var(--darkgold) 50%) 50% 100%/100% 200% no-repeat;
+  background: linear-gradient(to bottom, var(--green) 50%, var(--darkgold) 50%) 50% 100%/100% 200% no-repeat;
   left: 0;
   top: 0;
   transform: scaleY(0);
@@ -668,7 +665,7 @@ body:hover #cursor {
 .work-wrap #cursor.linkhover {
   border-color: transparent;
   border-width: 4px;
-  box-shadow: 0 0 0 2px var(--gold);
+  box-shadow: 0 0 0 2px var(--green);
 }
 .work-wrap #cursor.active strong.circle span.word {
   -webkit-animation-play-state: running;
@@ -741,7 +738,7 @@ body:hover #cursor {
 }
 .work-wrap #wrap h1:after {
   transform-origin: left;
-  background: var(--gold);
+  background: var(--green);
   z-index: 3;
   transform: scaleX(calc(1 - (var(--progress) * 2)));
 }
@@ -1082,13 +1079,13 @@ body:hover #cursor {
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to bottom, transparent 25%, var(--gold) 25%, var(--gold) 75%, transparent 75%);
+  background-image: linear-gradient(to bottom, transparent 25%, var(--green) 25%, var(--green) 75%, transparent 75%);
   background-size: 100% 250%;
   background-repeat: no-repeat;
   background-position: 50% calc((var(--progress) * 200px) - 150px);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-delay: 1.25s;
-  -webkit-text-stroke: 2px var(--gold);
+  -webkit-text-stroke: 2px var(--green);
 }
 .work-wrap #wrap .panel h2 span.word:nth-of-type(3n):before {
   background-position: 50% calc((var(--progress) * -200px) + 25px);
@@ -1207,7 +1204,7 @@ body:hover #cursor {
 }
 .work-wrap #wrap .panel .thumb:hover:before {
   transform: translate(-5%, -5%);
-  box-shadow: 0 0 0 2px var(--darkgold), 0 0 0 6px var(--bg), 0 0 0 8px var(--gold);
+  box-shadow: 0 0 0 2px var(--darkgold), 0 0 0 6px var(--bg), 0 0 0 8px var(--green);
   transition-delay: 0s, 0.2s;
 }
 .work-wrap #wrap .panel .thumb:before {
@@ -1217,7 +1214,7 @@ body:hover #cursor {
   height: 100%;
   left: 5%;
   top: 5%;
-  box-shadow: 0 0 0 2px var(--darkgold), 0 0 0 0 var(--bg), 0 0 0 0 var(--gold);
+  box-shadow: 0 0 0 2px var(--darkgold), 0 0 0 0 var(--bg), 0 0 0 0 var(--green);
   transition: transform 0.2s cubic-bezier(1, 0.885, 0.32, 1), box-shadow 0.2s cubic-bezier(1, 0.885, 0.32, 1);
   transition-delay: 0.2s, 0s;
   background: radial-gradient(circle at center, var(--darkgold) 1px, rgba(255, 255, 255, 0.005) 1px, rgba(255, 255, 255, 0.005) 20px) 0px 0px/20px 20px, radial-gradient(circle at center, var(--darkgold) 1px, rgba(255, 255, 255, 0.005) 1px, rgba(255, 255, 255, 0.005) 20px) 10px 10px/20px 20px;

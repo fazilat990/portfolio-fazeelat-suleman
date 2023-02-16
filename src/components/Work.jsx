@@ -174,7 +174,7 @@ const Work = () => {
 
   return (
     <div className="work-wrap">
-      <div className="container mx-auto">
+      <div className="container">
       <div id='wrap'>
         <h1 data-splitting='words'>Selected Demos</h1>
         <p className='subhead'>Adam Kuhn</p>
@@ -290,7 +290,7 @@ const Work = () => {
       <div id='cursor'>
         <strong className='circle' data-splitting='chars'>SEE•MORE•</strong>
       </div>
-      <div id='loader'>
+      {/* <div id='loader'>
         <div className='wrap'>
           <span>L</span>
           <span>O</span>
@@ -303,7 +303,7 @@ const Work = () => {
           <span>•</span>
           <span>•</span>
         </div>
-      </div>
+      </div> */}
       <div id='social'>
         <a href='https://twitter.com/cobra_winfrey' target='_blank'>
           <svg clipRule='evenodd' fillRule='evenodd' imageRendering='optimizeQuality' shapeRendering='geometricPrecision' textRendering='geometricPrecision' viewBox='0 0 3333 3333' xmlns='http://www.w3.org/2000/svg'>

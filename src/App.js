@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route exact path="/"
               element={
-                <Home title="Homepage content." />
+                <Home skills="Frontend/Wordpress/Shopify Developer" />
               }>
           </Route>
           <Route exact path="/work"
