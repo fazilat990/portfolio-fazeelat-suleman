@@ -1,0 +1,20 @@
+  /* .CircularProgressbar, .CircularProgressbar-path {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 3px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+  } */
+
+  .CircularProgressbar-path {
+    stroke: red;
+  }
+  .CircularProgressbar-trail {
+    stroke: gray;
+  }
+  .CircularProgressbar-text {
+    fill: yellow;
+  }
+  .CircularProgressbar-background {
+    fill: green;
+  }

@@ -6,6 +6,8 @@ import Work from './components/Work';
 import Header from './components/Header';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from './components/Contact';
+import About from './components/About';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -19,12 +21,22 @@ function App() {
                 <Home skills="Frontend/Wordpress/Shopify Developer" />
               }>
           </Route>
+          <Route exact path="/about"
+              element={
+                <About />
+              }>
+          </Route>
+          <Route exact path="/skills"
+              element={
+                <Skills />
+              }>
+          </Route>
           <Route exact path="/work"
               element={
                 <Work />
               }>
           </Route>
-          <Route exact path="/work"
+          <Route exact path="/contact"
               element={
                 <Contact />
               }>

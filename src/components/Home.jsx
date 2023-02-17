@@ -6,7 +6,7 @@ import { loadFull } from "tsparticles";
 function Home(props) {
 
   const particlesInit = React.useCallback(async engine => {
-      console.log(engine);
+      //console.log(engine);
       // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
       // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
       // starting from v2 you can add only the features you need reducing the bundle size
@@ -14,16 +14,19 @@ function Home(props) {
   }, []);
 
   const particlesLoaded = React.useCallback(async container => {
-      await console.log(container);
+     //await console.log(container);
   }, []);
 
   return (
     <div className='home-wrap'>
       <div className="container">
       <div className="intro relative z-10 min-h-[80vh] flex items-center">
-        <div className="intro-wrap">
-          <h1 className='text-[2.7rem] md:text-[6rem] font-black font-family-[Aerospace]'>Hi,<br />I'm Fazeelat,<br />Web Developer</h1>
-          <p className='text-1xl md:text-2xl mb-[50px]'>{props.skills}</p>
+        <div className="intro-wrap w-full">
+           <div className='flex items-center w-3/4'>
+            <div className='text-[2.7rem] md:text-[15rem] font-[Aerospace] mr-3 leading-none'>Hi<small>,</small></div>
+            <div className='text-[2.7rem] md:text-[5rem]'>I'm <strong className='font-black'>Fazeelat</strong>,<sub> & </sub>I Build <strong>Websites</strong></div>
+           </div>
+          <p className='text-1xl md:text-2xl mt-2 mb-[3rem]'>{props.skills}</p>
           <Link to="/contact" className="px-[50px] py-4 text-[var(--bg)] text-center border border-solid border-[var(--green)] rounded bg-[var(--green)] hover:bg-[var(--blue)] hover:border-[var(--blue)] hover:text-white transition-colors duration-300 font-black">Contact ME</Link>
         </div>
       </div>
