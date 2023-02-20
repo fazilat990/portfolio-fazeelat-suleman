@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
     
   return (
-    <div className='about-wrap'>
+    <div className='about-wrap py-5'>
         <div className="container">
             <div className="grid grid-cols-1 items-start gap-y-8 gap-x-8 sm:gap-y-16 lg:grid-cols-2">
                 <div className='about-intro'>

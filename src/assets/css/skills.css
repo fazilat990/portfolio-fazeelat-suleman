@@ -1,20 +1,18 @@
-  /* .CircularProgressbar, .CircularProgressbar-path {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 3px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-  } */
-
-  .CircularProgressbar-path {
-    stroke: red;
-  }
-  .CircularProgressbar-trail {
-    stroke: gray;
-  }
-  .CircularProgressbar-text {
-    fill: yellow;
-  }
-  .CircularProgressbar-background {
-    fill: green;
-  }
+.progress-bar-track {
+fill: none;
+stroke: url(#GradientColor) !important;
+}
+.progress-bar-circ-container, .progress-bar-circ-container svg{
+  width: 100% !important;
+}
+.progress-bar-percent{
+font-family: inherit !important;
+}
+.progress-bar-percent {
+  font-size: 12px !important;
+  font-weight: bold;
+}
+.skill-info img{
+  margin-right: 5px;
+  width: 15px;
+}
