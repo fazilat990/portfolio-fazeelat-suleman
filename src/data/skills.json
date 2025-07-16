@@ -1,0 +1,132 @@
+{
+    "skillsDetails": [
+        {
+            "skillname": "HTML",
+            "skillPercentage": "100",
+            "skillIcon": "html5"
+        },
+        {
+            "skillname": "CSS",
+            "skillPercentage": "98",
+            "skillIcon": "css3"
+        },
+        {
+            "skillname": "JavaScript",
+            "skillPercentage": "70",
+            "skillIcon": "js"
+        },
+        {
+            "skillname": "jQuery",
+            "skillPercentage": "70",
+            "skillIcon": "jquery"
+        },
+        {
+            "skillname": "Bootstrap",
+            "skillPercentage": "100",
+            "skillIcon": "bootstrap"
+        },
+        {
+            "skillname": "Tailwind",
+            "skillPercentage": "70",
+            "skillIcon": "tailwind"
+        },
+        {
+            "skillname": "Material UI",
+            "skillPercentage": "80",
+            "skillIcon": "materialui"
+        },
+        {
+            "skillname": "WordPress",
+            "skillPercentage": "90",
+            "skillIcon": "wordpress"
+        },
+        {
+            "skillname": "Shopify",
+            "skillPercentage": "70",
+            "skillIcon": "shopify"
+        },
+        {
+            "skillname": "React UI",
+            "skillPercentage": "50",
+            "skillIcon": "react"
+        }
+    ],
+    "additionalSkills": [
+        "Debugging",
+        "Cross-browser Compatibility",
+        "Theme Customization",
+        "Custom Product Properties",
+        "Website Building",
+        "Scratch Theme",
+        "Elementor Pro",
+        "Membership Systems",
+        "Paypal Integration",
+        "Document Object Model (DOM)",
+        "Problem Solving",
+        "End-to-end Testing",
+        "Adaptive Design",
+        "User Requirements",
+        "Communication",
+        "Analytical Skills",
+        "Wireframing",
+        "Bitbucket",
+        "Jira",
+        "Gitlab",
+        "GitHub",
+        "Search Engine Optimization (SEO)",
+        "Project Management",
+        "App Integration",
+        "Responsiveness",
+        "Web Architecture",
+        "XD, Figma, Zeplin, PSD to WordPress/Shopify/Custom",
+        "Single Page Applications",
+        "ACF Pro",
+        "Gutenberg Editor",
+        "Custom Gutenberg Blocks",
+        "WordPress Development",
+        "Landing Pages",
+        "Store Design",
+        "Redesigning",
+        "Shopify",
+        "New Store Development",
+        "Donation Plugin",
+        "Figma Conversion",
+        "Adobe XD",
+        "Plugin UI",
+        "Theme/Plugin Customization",
+        "Custom Theme Development",
+        "Plugins Integration",
+        "PHP",
+        "WPML",
+        "ACF",
+        "JavaScript",
+        "HTML",
+        "jQuery",
+        "Web Design",
+        "Web Development",
+        "SQL (Learning Based)",
+        "XML (Learning Based)",
+        "Cascading Style Sheets (CSS)",
+        "Java (Learning Based)",
+        "Photoshop",
+        "Microsoft Office",
+        "HTML",
+        "WordPress",
+        "C# (Learning Based)",
+        "Ionic Framework",
+        "C++ (Learning Based)",
+        "AutoCAD (Learning Based)",
+        "Content Management Systems (CMS)",
+        "SASS",
+        "Bootstrap",
+        "Team Management",
+        "Teamwork",
+        "Interpersonal Communication",
+        "Shorthand (Learning Based)",
+        "npm",
+        "Gulp.js",
+        "Speed Optimization",
+        "E-commerce",
+        "WordPress Design"
+    ]
+}

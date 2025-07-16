@@ -1,6 +1,72 @@
 {
   "projects": [
     {
+      "title": "GEC LLC",
+      "category": "WordPress",
+      "image": "gecllc.jpg",
+      "tags": [
+        "Website Development",
+        "Chatbot"
+      ],
+      "projectUrl": "https://gecllc.ae/"
+    },
+    {
+      "title": "HNL Consulting",
+      "category": "WordPress",
+      "image": "hnlconsulting.jpg",
+      "tags": [
+        "Website Development",
+        "Chatbot"
+      ],
+      "projectUrl": "https://hnlconsulting.uk/"
+    },
+    {
+      "title": "North Bound BBQ",
+      "category": "Shopify",
+      "image": "northboundbbq.jpg",
+      "tags": [
+        "Website Development",
+        "Membership Subscription",
+        "Theme Customisation",
+        "Zipcode based Delivery"
+      ],
+      "projectUrl": "https://northboundbbq.com/"
+    },
+    {
+      "title": "Event Hotel Stay",
+      "category": "WordPress",
+      "image": "eventhotelstay.jpg",
+      "tags": [
+        "Website Development",
+        "Figma to WordPress",
+        "Customizations",
+        "GSAP",
+        "Mapbox",
+        "Custom Post Types",
+        "Custom Pages"
+      ],
+      "projectUrl": "https://eventhotelstay.com/"
+    },
+    {
+      "title": "Huma Mistry",
+      "category": "Shopify",
+      "image": "humamistry.jpg",
+      "tags": [
+        "Website Development"
+      ],
+      "projectUrl": "https://www.humamistry.com/"
+    },
+    {
+      "title": "Blendy Trendz",
+      "category": "Shopify",
+      "image": "blendytrendz.jpg",
+      "tags": [
+        "Website Development",
+        "Currency Converter"
+      ],
+      "projectUrl": "https://blendytrendz.com/"
+    },
+    {
       "title": "Baby Fiore",
       "category": "Shopify",
       "image": "babyfiore.jpg",
@@ -65,7 +131,7 @@
       "projectUrl": "https://www.productivedentalmentors.com/"
     },
     {
-      "title": "Bareeze Man",
+      "title": "Bareeze Man Intl",
       "category": "Shopify",
       "image": "intl-bareezeman.jpg",
       "tags": [

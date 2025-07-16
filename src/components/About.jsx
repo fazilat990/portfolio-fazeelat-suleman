@@ -1,74 +1,22 @@
 import { Link } from 'react-router-dom';
+import AboutData from '../data/about.json'
 
 function About() {
-
-    const education = [
-        {
-            institute: 'APTECH Computer Education Pakistan',
-            degree: 'DISM (Diploma in System Management)',
-            year: '2015-16',
-            description: 'Designing & Programming',
-        },
-        {
-            institute: 'Royal Group of Colleges',
-            degree: 'Bachelors Degree (B.Com)',
-            year: '2008-10',
-            description: 'Business/Commerce, General',
-        },
-    ]
-
-    const certifications = ['Office Management', 'Shorthand', 'AutoCAD', 'Web Designing and Development', 'Graphics Designing', 'Certified Trainer', 'WordPress', 'Shopify']
-
-    const experience = [
-        {
-            company: 'Codup* + Dezital',
-            duration: 'Nov 2021 - Present',
-            jobTitle: 'Frontend/Shopify/WordPress Developer',
-            city: 'Lahore, Pakistan',
-            description: 'Deliver high-quality, robust production code for a diverse array of projects for clients, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-            tags: ['React', 'Git', 'SCSS', 'HTML', 'CSS', 'Javascript', 'jQuery', 'WordPress', 'Shopify', 'Bootstrap', 'Custom Website Development', 'Customizations', 'UI/UX', 'Figma/Zeplin/PSD/XD to WordPress/Custom Code']
-        },
-        {
-            company: 'Explore Logics IT Solutions',
-            duration: 'Mar 2019 - Nov 2021',
-            jobTitle: 'Frontend/Wordpress Developer',
-            city: 'Lahore, Pakistan',
-            description: 'Deliver high-quality, robust production code for a diverse array of projects for clients, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-            tags: ['Git', 'SCSS', 'HTML', 'CSS', 'Javascript', 'jQuery', 'Figma/Zeplin/PSD/XD to WordPress/Custom Code', 'WordPress', 'Bootstrap', 'Custom Website Development', 'Customizations', 'UI/UX']
-        },
-        {
-            company: 'Green Systems',
-            duration: 'Aug 2015 - Feb 2019',
-            jobTitle: 'UI/UX | Wordpress Developer',
-            city: 'Gujranwala, Pakistan',
-            description: 'Deliver high-quality, robust production code for a diverse array of projects for clients, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-            tags: ['Git', 'SCSS', 'HTML', 'CSS', 'Javascript', 'jQuery', 'Figma/Zeplin/PSD/XD to WordPress/Custom Code', 'WordPress', 'Bootstrap', 'Custom Website Development', 'Customizations', 'UI/UX']
-        },
-        {
-            company: 'Aptech Computer Education',
-            duration: 'Jul 2015 - Feb 2019',
-            jobTitle: 'Web Designing Lecturer',
-            city: 'Gujranwala, Pakistan',
-            description: 'Deliver high-quality, robust production code for a diverse array of projects for clients, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-            tags: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Bootstrap', 'Custom Website Development', 'UI/UX']
-        },
-        {
-            company: 'Carino Technologies (PVT) Ltd',
-            duration: 'Mar 2017 - Aug 2017',
-            jobTitle: 'Wordpress | Ionic Apps UI Frontend Developer',
-            city: 'Islamabad, Pakistan',
-            description: 'Deliver high-quality, robust production code for a diverse array of projects for clients, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-            tags: ['Ionic', 'Git', 'SCSS', 'HTML', 'CSS', 'Javascript', 'jQuery', 'Figma/Zeplin/PSD/XD to WordPress/Custom Code', 'WordPress', 'Bootstrap', 'Custom Website Development', 'Customizations', 'UI/UX']
-        },
-        {
-            company: 'Private Schools',
-            duration: 'Mar 2010 - Jun 2015',
-            jobTitle: 'Teacher',
-            city: 'Gujranwala, Pakistan',
-            description: 'Deliver high-quality, robust production code for a diverse array of projects for clients, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-            tags: ['English', 'Computer', 'Maths', 'Social Studies', 'Islamiyat']
-        }
-    ]
+    const education = AboutData.education.map(edu => ({
+        institute: edu.institute,
+        degree: edu.degree,
+        year: edu.year,
+        description: edu.description
+    }));
+    const certifications = AboutData.certifications;
+    const experience = AboutData.experience.map(exp => ({
+        company: exp.company,
+        duration: exp.duration,
+        jobTitle: exp.jobTitle,
+        city: exp.city,
+        description: exp.description,
+        tags: exp.tags
+    }));
 
     return (
         <div className='about-wrap py-5'>
@@ -159,8 +107,6 @@ function About() {
                                 </div>
                             ))
                         }
-
-
                     </div>
                 </div>
             </div>
