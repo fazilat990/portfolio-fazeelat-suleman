@@ -1,4 +1,3 @@
-import React from 'react';
 import '../assets/css/skills.css';
 import ProgressBar from 'react-animated-progress-bar';
 import htmlIcon from '../assets/images/html5.svg';
@@ -11,8 +10,6 @@ import materialuiIcon from '../assets/images/materialui.svg';
 import wordpressIcon from '../assets/images/wordpress.svg';
 import shopifyIcon from '../assets/images/shopify.svg';
 import reactIcon from '../assets/images/react.svg';
-
-// DOC: https://www.npmjs.com/package/react-animated-progress-bar?activeTab=readme
 
 function Skills() {
   const skillsDetails = [

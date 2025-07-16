@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 function About() {
@@ -18,7 +17,7 @@ function About() {
         },
     ]
 
-    const certifications = ['Office Management', 'Shorthand', 'AutoCAD', 'Web Designing and Development', 'Graphics Designing' ,'Certified Trainer', 'WordPress', 'Shopify']
+    const certifications = ['Office Management', 'Shorthand', 'AutoCAD', 'Web Designing and Development', 'Graphics Designing', 'Certified Trainer', 'WordPress', 'Shopify']
 
     const experience = [
         {
@@ -84,7 +83,7 @@ function About() {
                         <Link to="/contact" className="mt-5 px-[50px] py-4 text-[var(--bg)] text-center border border-solid border-[var(--green)] rounded bg-[var(--green)] hover:bg-[var(--blue)] hover:border-[var(--blue)] hover:text-white transition-colors duration-300 font-black inline-block">Contact Me</Link>
                     </div>
                     <div className="skills">
-                        <h2 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-[var(--green)] mb-5'>Education</h2>
+                        <h2 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-[var(--green)]'>Education</h2>
 
                         {
                             education.map((ei, index, { length }) => (
@@ -131,36 +130,36 @@ function About() {
                 <div className="experience-wrap py-20">
                     <h2 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[var(--green)]">Work Experience</h2>
                     <div className="-my-8 divide-y-2 divide-gray-700">
-                    {
-                        experience.map((exp, index) => (
-                            <div className="py-8 flex flex-wrap md:flex-nowrap" key={index}>
-                                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="font-semibold title-font">{exp.company}</span>
-                                    <span className="mt-1 text-sm">{exp.duration} </span>
-                                </div>
-                                <div className="md:flex-grow">
-                                    <h2 className="text-2xl font-semibold title-font hover:text-[var(--green)]">{exp.jobTitle}
-                                    </h2>
-                                    <p className="text-gray-400 mb-2">{exp.city}</p>
-                                    <p className="leading-relaxed">{exp.description}</p>
-                                    <div className="skills-tags">
-                                        <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                            {
-                                                exp.tags.map((tag, i) => (
-                                                    <li className="mr-1.5 mt-2" key={i}>
-                                                    <div
-                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                                                        {tag}</div>
-                                                    </li>
-                                                ))    
-                                            }
-                                        </ul>
+                        {
+                            experience.map((exp, index) => (
+                                <div className="py-8 flex flex-wrap md:flex-nowrap" key={index}>
+                                    <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                        <span className="font-semibold title-font">{exp.company}</span>
+                                        <span className="mt-1 text-sm">{exp.duration} </span>
+                                    </div>
+                                    <div className="md:flex-grow">
+                                        <h2 className="text-2xl font-semibold title-font hover:text-[var(--green)]">{exp.jobTitle}
+                                        </h2>
+                                        <p className="text-gray-400 mb-2">{exp.city}</p>
+                                        <p className="leading-relaxed">{exp.description}</p>
+                                        <div className="skills-tags">
+                                            <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                {
+                                                    exp.tags.map((tag, i) => (
+                                                        <li className="mr-1.5 mt-2" key={i}>
+                                                            <div
+                                                                className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                                                                {tag}</div>
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))
-                    }    
-                       
+                            ))
+                        }
+
 
                     </div>
                 </div>

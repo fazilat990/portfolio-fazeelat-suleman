@@ -120,7 +120,7 @@ function Contact() {
                 <div className="w-full md:w-1/1 px-3">
                   <div className="relative inline-block">
                     <input type="submit" value="Send" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 pl-4 pr-10 rounded focus:outline-none focus:shadow-outline" />
-                    <div className='loader absolute right-[10px] bottom-0 top-0 flex items-center hidden'>
+                    <div className='loader absolute right-[10px] bottom-0 top-0 items-center hidden'>
                       <img alt="loader" src={loaderImage} width="20px" />
                     </div>
                   </div>
