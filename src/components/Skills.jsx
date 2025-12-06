@@ -1,6 +1,7 @@
 import '../assets/css/skills.css';
-import ProgressBar from 'react-animated-progress-bar';
 import SkillsData from '../data/skills.json';
+import ProgressBar from './ProgressBar';
+// ProgressBar moved to `src/components/ProgressBar.jsx`
 
 function Skills() {
   const skillsDetailsData = SkillsData.skillsDetails.map(skill => ({
@@ -24,13 +25,13 @@ function Skills() {
             <p>Visit my <a href="https://www.linkedin.com/in/fazeelat-suleman-378841110/" target="_blank" rel="noreferrer">LinkedIn</a> profile for more details or just <a href="/contact">contact</a> me.
             </p>
           </div>
-          <div className="skills grid grid-cols-3 items-center gap-y-5 gap-x-5 md:grid-cols-5">
+          <div className="skills grid grid-cols-2 items-center gap-y-5 gap-x-5 md:grid-cols-3">
             {skillsDetailsData.map((sdd, index) => (
               <div key={index} className="skill text-center">
-                <ProgressBar width="100%" trackWidth="3" percentage={sdd.skillPercentage} trackPathColor="transparent" trackBorderColor="transparent" />
                 <div className='skill-info flex items-center justify-center'>
                   <img alt='skill icon' src={require(`../assets/images/${sdd.skillIcon}.svg`) || undefined} />
                   {sdd.skillname}</div>
+                  <ProgressBar percentage={sdd.skillPercentage} trackWidth={4} />
               </div>
             ))}
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" className='absolute'>
