@@ -1,6 +1,29 @@
 {
   "projects": [
     {
+      "title": "G-Sight",
+      "category": "Shopify",
+      "image": "gsight.jpg",
+      "tags": [
+        "Website Redesign",
+        "ADA",
+        "SEO"
+      ],
+      "projectUrl": "https://lionheartsafety.com/"
+    },
+    {
+      "title": "Lionheart Safety Training",
+      "category": "Shopify",
+      "image": "lionheart.jpg",
+      "tags": [
+        "Website Redesign",
+        "ADA",
+        "SEO",
+        "Analytics"
+      ],
+      "projectUrl": "https://lionheartsafety.com/"
+    },
+    {
       "title": "GEC LLC",
       "category": "WordPress",
       "image": "gecllc.jpg",
